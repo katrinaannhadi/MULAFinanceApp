@@ -17,7 +17,7 @@ This section has two parts to explore! Helping users with calculations
 
 - Tax Calculator
 - Investment Calculator
-- DOW Jones API
+- DOW Jones 
 
 LEARN 
 
