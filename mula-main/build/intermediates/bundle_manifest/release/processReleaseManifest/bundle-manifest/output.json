@@ -1,0 +1,1 @@
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":50,"versionName":"1.8.7","enabled":true,"outputFile":"uhabits-android-release-unsigned.apk","fullName":"release","baseName":"release"},"path":"AndroidManifest.xml","properties":{"packageId":"org.mula.finance","split":"","minSdkVersion":"21"}}]

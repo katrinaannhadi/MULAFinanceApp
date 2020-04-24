@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:habit="http://isoron.org/android">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/CardHeader"
+        android:text="@string/overview"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/llOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <org.mula.finance.activities.common.views.RingView
+                android:id="@+id/scoreRing"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                habit:percentage="0"
+                habit:textSize="12"
+                habit:thickness="5"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@string/score"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/monthDiffLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@string/month"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yearDiffLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@string/year"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:text="@string/total"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>

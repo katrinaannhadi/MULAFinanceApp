@@ -1,0 +1,486 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.mula.finance"
+4    android:versionCode="50"
+5    android:versionName="1.8.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:7:22-63
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:8:5-81
+14-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:6:5-67
+15-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:10:22-76
+17
+18    <application
+18-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:12:5-255:19
+19        android:name="org.mula.finance.HabitsApplication"
+19-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:13:9-42
+20        android:allowBackup="true"
+20-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:14:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\ab8f8951b99ab5b5d332022d857e3989\core-1.1.0\AndroidManifest.xml:24:18-86
+22        android:backupAgent="org.mula.finance.HabitsBackupAgent"
+22-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:15:9-49
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:16:9-43
+24        android:label="@string/main_activity_title"
+24-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:17:9-52
+25        android:supportsRtl="true"
+25-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:18:9-35
+26        android:theme="@style/AppBaseTheme" >
+26-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:20:9-44
+27        <activity
+27-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:22:9-23:59
+28            android:name="org.mula.finance.activities.category.ArticleSelectionActivity"
+28-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:22:19-79
+29            android:theme="@style/Mula.Purple" />
+29-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:23:13-47
+30        <activity
+30-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:25:9-26:59
+31            android:name="org.mula.finance.activities.ExpenseTrackerActivity"
+31-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:25:19-68
+32            android:theme="@style/Mula.Purple" />
+32-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:26:13-47
+33        <activity
+33-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:28:9-29:59
+34            android:name="org.mula.finance.activities.AddExpenseActivity"
+34-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:28:19-64
+35            android:theme="@style/Mula.Purple" />
+35-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:29:13-47
+36        <activity
+36-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:31:9-32:59
+37            android:name="org.mula.finance.activities.article.ArticleDetailActivity"
+37-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:31:19-75
+38            android:theme="@style/Mula.Purple" />
+38-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:32:13-47
+39        <activity
+39-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:34:9-35:59
+40            android:name="org.mula.finance.activities.article.ArticleActivity"
+40-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:34:19-69
+41            android:theme="@style/Mula.Purple" />
+41-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:35:13-47
+42        <activity
+42-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:37:9-38:59
+43            android:name="org.mula.finance.activities.MainActivity"
+43-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:37:19-58
+44            android:theme="@style/Mula.Purple" />
+44-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:38:13-47
+45        <!--
+46  <activity-alias
+47            android:name=".activities.habits.list.ListHabitsActivity"
+48            android:label="@string/main_activity_title"
+49            android:launchMode="singleTop"
+50            android:targetActivity=".activities.habits.list.ListHabitsActivity">
+51            <intent-filter android:label="@string/main_activity_title">
+52                <action android:name="android.intent.action.MAIN" />
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+55            </intent-filter>
+56        </activity-alias>
+57        -->
+58        <activity-alias
+58-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:71:9-82:26
+59            android:name="org.mula.finance.activities.MainActivity"
+59-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:72:13-52
+60            android:label="@string/main_activity_title"
+60-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:73:13-56
+61            android:launchMode="singleTop"
+61-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:74:13-43
+62            android:targetActivity="org.mula.finance.activities.MainActivity"
+62-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:75:13-62
+63            android:theme="@style/Mula.Purple" >
+63-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:76:13-47
+64            <intent-filter android:label="@string/main_activity_title" >
+64-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:77:13-81:29
+64-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:77:28-71
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:78:17-69
+65-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:78:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:80:17-77
+67-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:80:27-74
+68            </intent-filter>
+69        </activity-alias>
+70
+71        <meta-data
+71-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:40:9-42:82
+72            android:name="com.google.android.backup.api_key"
+72-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:41:13-61
+73            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+73-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:42:13-79
+74        <meta-data
+74-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:43:9-45:57
+75            android:name="preloaded_fonts"
+75-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:44:13-43
+76            android:resource="@array/preloaded_fonts" />
+76-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:45:13-54
+77        <meta-data
+77-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:47:9-49:37
+78            android:name="fontProviderRequests"
+78-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:48:13-48
+79            android:value="Rubik" />
+79-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:49:13-34
+80
+81        <activity
+81-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:51:9-56:59
+82            android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
+82-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:52:13-70
+83            android:exported="true"
+83-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:53:13-36
+84            android:label="@string/main_activity_title"
+84-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:54:13-56
+85            android:launchMode="singleTop"
+85-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:55:13-43
+86            android:theme="@style/Mula.Purple" />
+86-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:56:13-47
+87        <activity
+87-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:85:9-86:49
+88            android:name="org.mula.finance.activities.InvestmentCalculatorActivity"
+88-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:85:19-74
+89            android:theme="@style/Mula.Purple" />
+89-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:86:13-47
+90        <activity
+90-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:88:9-89:49
+91            android:name="org.mula.finance.activities.TaxCalculatorActivity"
+91-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:88:19-67
+92            android:theme="@style/Mula.Purple" />
+92-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:89:13-47
+93        <activity
+93-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:91:9-92:49
+94            android:name="org.mula.finance.activities.QuizActivity"
+94-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:91:19-58
+95            android:theme="@style/Mula.Purple" />
+95-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:92:13-47
+96        <activity
+96-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:94:9-101:20
+97            android:name="org.mula.finance.activities.habits.show.ShowHabitActivity"
+97-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:95:13-69
+98            android:label="@string/title_activity_show_habit"
+98-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:96:13-62
+99            android:theme="@style/Mula.Purple" >
+99-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:97:13-47
+100            <meta-data
+100-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:98:13-100:94
+101                android:name="android.support.PARENT_ACTIVITY"
+101-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:99:17-63
+102                android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
+102-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:100:17-91
+103        </activity>
+104        <activity
+104-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:103:9-110:20
+105            android:name="org.mula.finance.activities.settings.SettingsActivity"
+105-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:104:13-65
+106            android:label="@string/settings"
+106-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:105:13-45
+107            android:theme="@style/Mula.Purple" >
+107-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:106:13-47
+108            <meta-data
+108-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:98:13-100:94
+109                android:name="android.support.PARENT_ACTIVITY"
+109-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:99:17-63
+110                android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
+110-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:100:17-91
+111        </activity>
+112        <activity
+112-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:112:9-115:81
+113            android:name="org.mula.finance.activities.intro.IntroActivity"
+113-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:113:13-59
+114            android:label=""
+114-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:114:13-29
+115            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+115-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:115:13-78
+116        <activity
+116-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:116:9-122:20
+117            android:name="org.mula.finance.widgets.HabitPickerDialog"
+117-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:117:13-54
+118            android:theme="@style/Theme.MaterialComponents.Light.Dialog" >
+118-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:118:13-73
+119            <intent-filter>
+119-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:119:13-121:29
+120                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+120-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:120:17-87
+120-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:120:25-84
+121            </intent-filter>
+122        </activity>
+123        <activity
+123-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:123:9-127:84
+124            android:name="org.mula.finance.notifications.SnoozeDelayPickerActivity"
+124-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:124:13-68
+125            android:excludeFromRecents="true"
+125-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:125:13-46
+126            android:launchMode="singleInstance"
+126-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:126:13-48
+127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+127-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:127:13-72
+128
+129        <receiver
+129-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:129:9-139:20
+130            android:name="org.mula.finance.widgets.CheckmarkWidgetProvider"
+130-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:130:13-60
+131            android:label="@string/checkmark" >
+131-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:131:13-46
+132            <intent-filter>
+132-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:132:13-134:29
+133                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+133-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:17-84
+133-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:25-81
+134            </intent-filter>
+135
+136            <meta-data
+136-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:136:13-138:65
+137                android:name="android.appwidget.provider"
+137-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:137:17-58
+138                android:resource="@xml/widget_checkmark_info" />
+138-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:138:17-62
+139        </receiver>
+140
+141        <service
+141-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:141:9-144:72
+142            android:name="org.mula.finance.widgets.StackWidgetService"
+142-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:142:13-55
+143            android:exported="false"
+143-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:143:13-37
+144            android:permission="android.permission.BIND_REMOTEVIEWS" />
+144-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:144:13-69
+145
+146        <receiver
+146-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:146:9-156:20
+147            android:name="org.mula.finance.widgets.HistoryWidgetProvider"
+147-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:147:13-58
+148            android:label="@string/history" >
+148-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:148:13-44
+149            <intent-filter>
+149-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:132:13-134:29
+150                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+150-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:17-84
+150-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:25-81
+151            </intent-filter>
+152
+153            <meta-data
+153-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:136:13-138:65
+154                android:name="android.appwidget.provider"
+154-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:137:17-58
+155                android:resource="@xml/widget_history_info" />
+155-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:138:17-62
+156        </receiver>
+157        <receiver
+157-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:157:9-167:20
+158            android:name="org.mula.finance.widgets.ScoreWidgetProvider"
+158-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:158:13-56
+159            android:label="@string/habit_strength" >
+159-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:159:13-51
+160            <intent-filter>
+160-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:132:13-134:29
+161                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+161-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:17-84
+161-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:25-81
+162            </intent-filter>
+163
+164            <meta-data
+164-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:136:13-138:65
+165                android:name="android.appwidget.provider"
+165-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:137:17-58
+166                android:resource="@xml/widget_score_info" />
+166-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:138:17-62
+167        </receiver>
+168        <receiver
+168-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:168:9-178:20
+169            android:name="org.mula.finance.widgets.StreakWidgetProvider"
+169-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:169:13-57
+170            android:label="@string/streaks" >
+170-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:170:13-44
+171            <intent-filter>
+171-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:132:13-134:29
+172                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+172-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:17-84
+172-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:25-81
+173            </intent-filter>
+174
+175            <meta-data
+175-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:136:13-138:65
+176                android:name="android.appwidget.provider"
+176-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:137:17-58
+177                android:resource="@xml/widget_streak_info" />
+177-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:138:17-62
+178        </receiver>
+179        <receiver
+179-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:179:9-189:20
+180            android:name="org.mula.finance.widgets.FrequencyWidgetProvider"
+180-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:180:13-60
+181            android:label="@string/frequency" >
+181-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:181:13-46
+182            <intent-filter>
+182-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:132:13-134:29
+183                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+183-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:17-84
+183-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:133:25-81
+184            </intent-filter>
+185
+186            <meta-data
+186-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:136:13-138:65
+187                android:name="android.appwidget.provider"
+187-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:137:17-58
+188                android:resource="@xml/widget_frequency_info" />
+188-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:138:17-62
+189        </receiver>
+190        <receiver android:name="org.mula.finance.receivers.ReminderReceiver" >
+190-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:190:9-194:20
+190-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:190:19-61
+191            <intent-filter>
+191-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:191:13-193:29
+192                <action android:name="android.intent.action.BOOT_COMPLETED" />
+192-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:192:17-79
+192-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:192:25-76
+193            </intent-filter>
+194        </receiver>
+195        <receiver android:name="org.mula.finance.receivers.WidgetReceiver" >
+195-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:195:9-223:20
+195-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:195:19-59
+196            <intent-filter>
+196-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:196:13-204:29
+197                <category android:name="android.intent.category.DEFAULT" />
+197-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:17-76
+197-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:27-73
+198
+199                <action android:name="org.mula.finance.ACTION_TOGGLE_REPETITION" />
+199-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:199:17-84
+199-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:199:25-81
+200
+201                <data
+201-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:201:17-203:48
+202                    android:host="org.mula.finance"
+202-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:202:21-52
+203                    android:scheme="content" />
+203-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:203:21-45
+204            </intent-filter>
+205            <intent-filter>
+205-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:205:13-213:29
+206                <category android:name="android.intent.category.DEFAULT" />
+206-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:17-76
+206-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:27-73
+207
+208                <action android:name="org.mula.finance.ACTION_ADD_REPETITION" />
+208-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:208:17-81
+208-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:208:25-78
+209
+210                <data
+210-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:201:17-203:48
+211                    android:host="org.mula.finance"
+211-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:202:21-52
+212                    android:scheme="content" />
+212-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:203:21-45
+213            </intent-filter>
+214            <intent-filter>
+214-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:214:13-222:29
+215                <category android:name="android.intent.category.DEFAULT" />
+215-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:17-76
+215-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:197:27-73
+216
+217                <action android:name="org.mula.finance.ACTION_REMOVE_REPETITION" />
+217-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:217:17-84
+217-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:217:25-81
+218
+219                <data
+219-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:201:17-203:48
+220                    android:host="org.mula.finance"
+220-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:202:21-52
+221                    android:scheme="content" />
+221-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:203:21-45
+222            </intent-filter>
+223        </receiver> <!-- Locale/Tasker -->
+224        <activity
+224-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:224:9-232:20
+225            android:name="org.mula.finance.automation.EditSettingActivity"
+225-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:225:13-59
+226            android:exported="true"
+226-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:226:13-36
+227            android:icon="@mipmap/ic_launcher"
+227-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:227:13-47
+228            android:label="@string/app_name" >
+228-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:228:13-45
+229            <intent-filter>
+229-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:229:13-231:29
+230                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+230-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:230:17-95
+230-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:230:25-92
+231            </intent-filter>
+232        </activity> <!-- Locale/Tasker -->
+233        <receiver
+233-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:233:9-239:20
+234            android:name="org.mula.finance.automation.FireSettingReceiver"
+234-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:234:13-59
+235            android:exported="true" >
+235-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:235:13-36
+236            <intent-filter>
+236-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:236:13-238:29
+237                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+237-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:237:17-95
+237-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:237:25-92
+238            </intent-filter>
+239        </receiver>
+240
+241        <provider
+241-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:241:9-249:20
+242            android:name="androidx.core.content.FileProvider"
+242-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:242:13-62
+243            android:authorities="org.mula.finance"
+243-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:243:13-51
+244            android:exported="false"
+244-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:244:13-37
+245            android:grantUriPermissions="true" >
+245-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:245:13-47
+246            <meta-data
+246-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:246:13-248:54
+247                android:name="android.support.FILE_PROVIDER_PATHS"
+247-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:247:17-67
+248                android:resource="@xml/file_paths" />
+248-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:248:17-51
+249        </provider>
+250
+251        <service
+251-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:251:9-254:48
+252            android:name="org.mula.finance.sync.SyncService"
+252-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:252:13-45
+253            android:enabled="true"
+253-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:253:13-35
+254            android:exported="false" />
+254-->C:\Users\Ines\AndroidStudioProjects\MulaFinancialApp\uhabits-android\src\main\AndroidManifest.xml:254:13-37
+255        <service
+255-->[androidx.room:room-runtime:2.2.1] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\070938d54ddb782f19975c379db75655\room-runtime-2.2.1\AndroidManifest.xml:25:9-27:40
+256            android:name="androidx.room.MultiInstanceInvalidationService"
+256-->[androidx.room:room-runtime:2.2.1] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\070938d54ddb782f19975c379db75655\room-runtime-2.2.1\AndroidManifest.xml:26:13-74
+257            android:exported="false" />
+257-->[androidx.room:room-runtime:2.2.1] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\070938d54ddb782f19975c379db75655\room-runtime-2.2.1\AndroidManifest.xml:27:13-37
+258
+259        <provider
+259-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\f40de77382666bd1ce072385385aa8df\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+260            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+260-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\f40de77382666bd1ce072385385aa8df\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+261            android:authorities="org.mula.finance.lifecycle-process"
+261-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\f40de77382666bd1ce072385385aa8df\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+262            android:exported="false"
+262-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\f40de77382666bd1ce072385385aa8df\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+263            android:multiprocess="true" />
+263-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Ines\.gradle\caches\transforms-2\files-2.1\f40de77382666bd1ce072385385aa8df\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+264    </application>
+265
+266</manifest>

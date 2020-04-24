@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<LinearLayout style="@style/dialogFormRow"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://isoron.org/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+                android:background="@color/mula_yellow_500">
+
+    <TextView
+        style="@style/dialogFormLabel"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/target"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/tvTargetCount"
+            style="@style/dialogFormInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:hint="@string/count"
+            android:inputType="numberDecimal"
+            android:text="@string/default_count"
+            android:textColor="@color/mula_purple_dark_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <org.mula.finance.activities.habits.edit.views.ExampleEditText
+            android:id="@+id/tvUnit"
+            style="@style/dialogFormInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:hint="@string/unit"
+            android:inputType="text"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp"
+            app:example="@string/example_units" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

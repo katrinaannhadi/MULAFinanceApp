@@ -1,0 +1,12 @@
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="?android:colorControlHighlight">
+
+    <item android:id="@android:id/mask">
+        <color android:color="@android:color/white" />
+    </item>
+
+</ripple>

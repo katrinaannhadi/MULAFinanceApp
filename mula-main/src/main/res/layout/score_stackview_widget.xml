@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mula_yellow_500">
+    <StackView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scoreStackWidgetView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:loopViews="true" />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scoreStackWidgetEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="@string/frequency_stack_widget"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/navGoals"
+        android:enabled="true"
+        android:icon="@drawable/asl_my_courses"
+        android:title="Goals"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navCalculators"
+        android:enabled="true"
+        android:icon="@drawable/asl_featured"
+        android:title="Calculators"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/navLearn"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="Learn"
+        app:showAsAction="always"/>
+
+</menu>

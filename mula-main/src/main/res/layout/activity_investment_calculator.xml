@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mula_turqoise_400"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_investment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/widget_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="-27dp">
+
+            <TextView
+                android:id="@+id/EnterAmount"
+                android:layout_width="211dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Enter the calculations"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraint" />
+
+
+            <TextView
+                android:id="@+id/titleStartingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_start_amount"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/EnterAmount" />
+
+            <EditText
+                android:id="@+id/tv_StartingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Enter Start Amount E.g 1000"
+                android:inputType="number"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/titleStartingAmount"
+                app:layout_constraintTop_toTopOf="@+id/titleStartingAmount" />
+
+            <TextView
+                android:id="@+id/titleAdditionalContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_additional_contribution"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_StartingAmount" />
+
+            <EditText
+                android:id="@+id/tv_AdditionalContributions"
+                android:layout_width="178dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints=""
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Enter any contributions E.g 110"
+                android:inputType="number"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.Mula.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_StartingAmount"
+                app:layout_constraintTop_toTopOf="@+id/titleAdditionalContributions" />
+
+            <TextView
+                android:id="@+id/titleReturnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="Annual interest rate (%)"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_AdditionalContributions" />
+
+            <EditText
+                android:id="@+id/tv_ReturnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Enter return rate E.g. 10"
+                android:inputType="number"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_Years"
+                app:layout_constraintTop_toTopOf="@+id/titleReturnRate" />
+
+            <TextView
+                android:id="@+id/titleTimesCompounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_times_compounded"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ReturnRate" />
+
+            <EditText
+                android:id="@+id/tv_TimesCompounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Enter no.of compounds a year E.g.2"
+                android:inputType="number"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_Years"
+                app:layout_constraintTop_toTopOf="@+id/titleTimesCompounded" />
+
+            <TextView
+                android:id="@+id/titleYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_years"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_TimesCompounded" />
+
+            <EditText
+                android:id="@+id/tv_Years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Enter number of years E.g 12"
+                android:inputType="number"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_StartingAmount"
+                app:layout_constraintTop_toTopOf="@+id/titleYears" />
+
+
+            <TextView
+                android:id="@+id/titleFutureValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_contribute"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_calculate" />
+
+            <TextView
+                android:id="@+id/tv_FutureValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Total Future Value"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_Years"
+                app:layout_constraintTop_toBottomOf="@+id/titleFutureValue" />
+
+            <TextView
+                android:id="@+id/titleTotalContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_total_contribution"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_FutureValue" />
+
+            <TextView
+                android:id="@+id/tv_TotalContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Total from contributions"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_FutureValue"
+                app:layout_constraintTop_toBottomOf="@+id/titleTotalContributions" />
+
+            <TextView
+                android:id="@+id/titleInterestPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_interest_principal"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_TotalContributions" />
+
+
+            <TextView
+                android:id="@+id/tv_InterestPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Interest from principal"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_TotalContributions"
+                app:layout_constraintTop_toBottomOf="@+id/titleInterestPrincipal" />
+
+            <TextView
+                android:id="@+id/titleInterestContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_interest_contribution"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_InterestPrincipal" />
+
+            <TextView
+                android:id="@+id/tv_InterestContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="Interest on contribution"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_InterestPrincipal"
+                app:layout_constraintTop_toBottomOf="@+id/titleInterestContributions" />
+
+
+            <TextView
+                android:id="@+id/titleTotalInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="@string/ic_total_interest"
+                android:textAppearance="@style/TextAppearance.Mula.Headline4"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_InterestContributions" />
+
+            <TextView
+                android:id="@+id/tv_TotalInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik_bold"
+                android:hint="@string/et_total_interest"
+                android:lineHeight="40sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/mula_purple_bright_accent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_FutureValue"
+                app:layout_constraintTop_toBottomOf="@+id/titleTotalInterest" />
+
+
+            <Button
+                android:id="@+id/bt_calculate"
+                android:layout_width="129dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="48dp"
+                android:text="Calculate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleYears" />
+
+            <Button
+                android:id="@+id/bt_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Reset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_TotalInterest" />
+
+
+            <TextView
+                android:id="@+id/pie"
+                android:layout_width="211dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Total Value"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pieFragment" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/pieFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_refresh"
+                tools:layout="@layout/fragment_pie_chart" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="211dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Total Value Over Time"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineFragment" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/lineFragment"
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line"
+                tools:layout="@layout/fragment_line_chart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mula_turqoise_400"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mula_turqoise_400"
+        tools:context=".Fragments.CalculatorFragment">
+
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="end"
+            android:padding="@dimen/grid_1"
+            android:paddingTop="@dimen/grid_1"
+            android:text="Calculators"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.Mula.Headline3"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingPrefix,RtlCompat" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="24dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choose">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:id="@+id/rv_calculator"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="0dp"-->
+        <!--        android:layout_marginTop="24dp"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/choose" />-->
+
+        <TextView
+            android:id="@+id/Stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="end"
+            android:padding="@dimen/grid_1"
+            android:paddingTop="@dimen/grid_1"
+            android:text="DOW Jones"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.Mula.Headline3"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/candle_stick_chart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"
+            tools:ignore="MissingPrefix,RtlCompat" />
+
+
+        <com.github.mikephil.charting.charts.CandleStickChart
+            android:id="@+id/candle_stick_chart"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_datetime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_price"
+            app:layout_constraintTop_toBottomOf="@+id/Stock">
+
+        </com.github.mikephil.charting.charts.CandleStickChart>
+
+        <Button
+            android:id="@+id/button_refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Refresh Chart"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Date/Time"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_refresh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="USD"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_refresh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Stock" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

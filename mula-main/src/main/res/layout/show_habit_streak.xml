@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/title"
+        style="@style/CardHeader"
+        android:text="@string/best_streaks"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="20sp" />
+
+    <org.mula.finance.activities.common.views.StreakChart
+        android:id="@+id/streakChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                android:background="@color/mula_yellow_500">
+
+    <NumberPicker
+        android:id="@+id/picker"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:text="."
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="18sp" />
+
+    <NumberPicker
+        android:id="@+id/picker2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        />
+
+    <TextView
+        android:id="@+id/tvUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="18sp" />
+
+</LinearLayout>

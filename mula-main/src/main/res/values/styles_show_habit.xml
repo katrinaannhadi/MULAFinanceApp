@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<resources>
+    <style name="ShowHabit" />
+
+    <style name="ShowHabit.Subtitle">
+        <item name="android:background">?headerBackgroundColor</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingStart">60dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/formPanel"
+        style="@style/dialogFormPanel">
+
+        <LinearLayout
+            style="@style/dialogFormRow">
+
+            <TextView
+                style="@style/dialogFormLabel"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/action"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/actionSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:entries="@array/actions"
+                android:minWidth="400dp"
+                android:theme="@style/dialogFormText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/dialogFormRow">
+
+            <TextView
+                style="@style/dialogFormLabel"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/habit"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/habitSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:entries="@array/actions"
+                android:minWidth="400dp"
+                android:theme="@style/dialogFormText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingEnd="16dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="16dp"
+        android:paddingStart="0dp">
+
+        <Button
+            android:id="@+id/buttonSave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+</LinearLayout>

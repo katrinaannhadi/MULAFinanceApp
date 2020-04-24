@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/featured_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/grid_0_5"
+    android:transitionName="@{course.name}"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@{course.thumbContentDesc}"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mula_logo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        android:background="@drawable/ic_mula_logo"
+        android:foreground="@drawable/avatar_outline"
+        android:importantForAccessibility="no"/>
+<!--        android:circleCrop="@{true}"-->
+        />
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/mula_purple_dark_primary"
+        android:contentDescription="Search"
+        android:foregroundTint="@color/mula_purple_bright_accent"
+        android:foregroundTintMode="src_over"
+        android:padding="@dimen/grid_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_full"
+        app:srcCompat="@drawable/ic_compass"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/article_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:padding="@dimen/grid_2"
+        android:text="@{course.subject}"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Mula.Body1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mula_logo" />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/grid_2"
+        android:text="@{course.name}"
+        android:textAppearance="@style/TextAppearance.Mula.Headline2"
+        android:textColor="@color/design_default_color_surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_category" />
+
+    <TextView
+        android:id="@+id/hot_snippet_title"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:padding="@dimen/grid_2"
+        android:paddingTop="@dimen/grid_1_5"
+        android:text="Hot Snippet"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/mula_purple_bright_accent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_title" />
+
+
+    <TextView
+        android:id="@+id/hot_snippet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/rubik"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="24sp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_snippet_title" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inset_divider"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full" />
+
+    <TextView
+        android:id="@+id/full"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:padding="@dimen/grid_2"
+        android:paddingTop="20dp"
+        android:text="Full Length"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_snippet" />
+
+    <TextView
+        android:id="@+id/article_full"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rubik"
+        android:padding="@dimen/grid_2"
+        android:paddingVertical="@dimen/grid_3"
+        android:paddingTop="20dp"
+        android:text="@{String.valueOf(course.steps)}"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Mula.Body1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

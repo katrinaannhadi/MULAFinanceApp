@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@color/mula_yellow_500"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/dialogFormRow"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/dialogFormLabel"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/reminder"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvReminderTime"
+            style="@style/dialogFormSpinner"
+            android:backgroundTint="@color/mula_purple_dark_primary"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReminderDays"
+        style="@style/dialogFormRow"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/dialogFormLabel"
+            android:fontFamily="@font/rubik"
+            android:text=""
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvReminderDays"
+            style="@style/dialogFormSpinner"
+            android:backgroundTint="@color/mula_purple_dark_primary"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

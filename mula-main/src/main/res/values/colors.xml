@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#24191c</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <array name="lightPalette">
+        <item>@color/red_700</item>
+        <item>@color/deep_orange_700</item>
+        <item>@color/orange_700</item>
+        <item>@color/amber_800</item>
+        <item>@color/yellow_800</item>
+        <item>@color/lime_700</item>
+        <item>@color/light_green_600</item>
+        <item>@color/green_700</item>
+        <item>@color/teal_600</item>
+        <item>@color/cyan_600</item>
+        <item>@color/light_blue_600</item>
+        <item>@color/blue_700</item>
+        <item>@color/indigo_700</item>
+        <item>@color/deep_purple_600</item>
+        <item>@color/purple_600</item>
+        <item>@color/pink_600</item>
+        <item>@color/brown_700</item>
+        <item>@color/grey_800</item>
+        <item>@color/grey_600</item>
+        <item>@color/grey_500</item>
+    </array>
+
+    <array name="darkPalette">
+        <item>@color/red_200</item>
+        <item>@color/deep_orange_200</item>
+        <item>@color/orange_200</item>
+        <item>@color/amber_100</item>
+        <item>@color/yellow_200</item>
+        <item>@color/lime_200</item>
+        <item>@color/light_green_200</item>
+        <item>@color/green_A200</item>
+        <item>@color/teal_200</item>
+        <item>@color/cyan_200</item>
+        <item>@color/light_blue_200</item>
+        <item>@color/blue_300</item>
+        <item>@color/indigo_200</item>
+        <item>@color/deep_purple_200</item>
+        <item>@color/purple_200</item>
+        <item>@color/pink_200</item>
+        <item>@color/brown_200</item>
+        <item>@color/grey_100</item>
+        <item>@color/grey_300</item>
+        <item>@color/grey_500</item>
+    </array>
+
+    <array name="transparentWidgetPalette">
+        <item>@color/red_800</item>
+        <item>@color/deep_orange_800</item>
+        <item>@color/orange_800</item>
+        <item>@color/amber_800</item>
+        <item>@color/yellow_800</item>
+        <item>@color/lime_800</item>
+        <item>@color/light_green_600</item>
+        <item>@color/green_700</item>
+        <item>@color/teal_700</item>
+        <item>@color/cyan_700</item>
+        <item>@color/light_blue_700</item>
+        <item>@color/blue_800</item>
+        <item>@color/indigo_800</item>
+        <item>@color/deep_purple_700</item>
+        <item>@color/purple_700</item>
+        <item>@color/pink_700</item>
+        <item>@color/brown_800</item>
+        <item>@color/black_aa</item>
+        <item>@color/black_aa</item>
+        <item>@color/black_aa</item>
+    </array>
+
+
+    <!--theme colors-->
+    <color name="mula_turqoise_200">#13F28A</color>
+    <color name="mula_turqoise_400">#03BAB9</color>
+    <color name="mula_turqoise_500">#AAFFBF</color>
+    <color name="mula_turqoise_dark_primary">#242316</color>
+
+    <color name="mula_blue_200">#91a4fc</color>
+    <color name="mula_blue_700">#0336ff</color>
+    <color name="mula_blue_800">#0035c9</color>
+    <color name="mula_blue_dark_primary">#1c1d24</color>
+
+    <color name="mula_yellow_200">#ffeb46</color>
+
+    <color name="mula_yellow_700">#ffde03</color>
+    <color name="mula_yellow_dark_primary">#24191c</color>
+
+    <color name="mula_purple_200">#B2B1D1</color>
+    <color name="mula_purple_500">#B789BA</color>
+    <color name="mula_purple_600">#6663A4</color>
+    <color name="mula_grey_200">#98989B</color>
+    <color name="mula_purple_dark_primary">#24191c</color>
+    <color name="mula_purple_bright_accent">#FF3467</color>
+    <color name="mula_purple_blue_accent">#48C4B6</color>
+
+    <!--background protection for nav-bar, varied on Q+-->
+    <color name="immersive_sys_ui">#33000000</color>
+    <color name="nav_bar">@color/immersive_sys_ui</color>
+
+
+    <color name="mula_yellow_500">#FFC000</color>
+    <color name="mula_yellow_600">#DEA600</color>
+
+    <color name="purple_300">#803D7A</color>
+    <color name="pink_400">#E66EDC</color>
+    <color name="pink_300">#FF7AF4</color>
+
+    <color name="green_300">#48C4B6</color>
+    <color name="green_400">#2F8076</color>
+
+    <color name="pink_dark_primary_300">#FF3467</color>
+    <color name="light_grey_300">#98989B</color>
+    <color name="light_blue_300">#48C4B6</color>
+    <color name="light_green_300">#A0DCE0</color>
+    <color name="dark_green_300">#33909F</color>
+    <color name="light_lilac_300">#B2B1D1</color>
+    <color name="lilac_300">#B789BA</color>
+    <color name="dark_lilac_300">#6663A4</color>
+    <color name="blue_300">#8CC8E6</color>
+    <color name="medium_blue_300">#1992CE</color>
+    <color name="dark_blue_300">#011F6A</color>
+
+    <color name="ic_launcher_background">#1976D2</color>
+</resources>

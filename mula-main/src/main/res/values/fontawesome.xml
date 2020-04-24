@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<resources>
+	<string translatable="false" name="fa_star">&#xf005;</string>
+	<string translatable="false" name="fa_star_o">&#xf006;</string>
+	<!--<string translatable="false" name="fa_star_half">&#xf089;</string>-->
+	<string translatable="false" name="fa_star_half_o">&#xf123;</string>
+	<string translatable="false" name="fa_check">&#xf00c;</string>
+	<string translatable="false" name="fa_times">&#xf00d;</string>
+	<string translatable="false" name="fa_archive">&#xf187;</string>
+
+</resources>

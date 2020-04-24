@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://isoron.org/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    android:minWidth="400dp"-->
+<!--    >-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/mula_purple_dark_primary"
+        android:textSize="18sp"
+        app1:boxStrokeColor="@color/mula_blue_dark_primary"
+        app1:layout_constraintEnd_toStartOf="@+id/buttonPickColor"
+        app1:layout_constraintHorizontal_weight="6"
+        app1:layout_constraintStart_toStartOf="parent"
+        app1:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/tvName"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center_vertical"
+            android:hint="@string/name"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textColorHint="@color/mula_purple_bright_accent"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/buttonPickColor"
+        style="@style/dialogFormInputColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mula_purple_dark_primary"
+        android:contentDescription="@string/color_picker_default_title"
+        android:src="?dialogIconChangeColor"
+        app1:layout_constraintBottom_toBottomOf="@id/tilName"
+        app1:layout_constraintEnd_toEndOf="parent"
+        app1:layout_constraintHorizontal_weight="1"
+        app1:layout_constraintStart_toEndOf="@+id/tilName"
+        app1:layout_constraintTop_toTopOf="@id/tilName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_1_5"
+        android:hint="@string/question"
+        android:textColorHint="@color/mula_purple_dark_primary"
+        android:textSize="18sp"
+        app1:layout_constraintEnd_toEndOf="parent"
+        app1:layout_constraintHorizontal_weight="6"
+        app1:layout_constraintStart_toStartOf="parent"
+        app1:layout_constraintTop_toBottomOf="@id/tilName">
+
+        <org.mula.finance.activities.habits.edit.views.ExampleEditText
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textColorHint="@color/mula_purple_dark_primary"
+            android:textSize="18sp"
+            app:example="@string/example_question_numerical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_1_5"
+        android:hint="@string/notes"
+        android:textColorHint="@color/mula_purple_dark_primary"
+        android:textSize="18sp"
+        app1:layout_constraintEnd_toEndOf="parent"
+        app1:layout_constraintStart_toStartOf="parent"
+        app1:layout_constraintTop_toBottomOf="@id/tilQuestion">
+
+        <org.mula.finance.activities.habits.edit.views.ExampleEditText
+            android:id="@+id/tvDescription"
+            style="@style/dialogFormInputMultiline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="top"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp"
+            app:example="@string/example_notes" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

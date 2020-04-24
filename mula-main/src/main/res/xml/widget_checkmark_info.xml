@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+      ~ MULA Financial Application INFS3634
+      -->
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:initialLayout="@layout/widget_wrapper"
+                    android:previewImage="@drawable/widget_preview_checkmark"
+                    android:resizeMode="none"
+                    android:updatePeriodMillis="3600000"
+                    android:configure="org.mula.finance.widgets.HabitPickerDialog"
+                    android:widgetCategory="home_screen">
+</appwidget-provider>
