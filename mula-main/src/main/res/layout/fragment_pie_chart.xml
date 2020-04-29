@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mula_yellow_500"
+    android:background="@color/white"
     tools:context=".Fragments.PieChartFragment"
     >
 
@@ -26,10 +26,11 @@
     <com.razerdp.widget.animatedpieview.AnimatedPieView
         android:id="@+id/pieView"
         android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pieChart" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pieChart"
+        android:layout_marginBottom="50dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

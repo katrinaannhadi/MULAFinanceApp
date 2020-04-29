@@ -86,6 +86,8 @@ public class ArticleFragment extends Fragment {
                 .placeholder(R.drawable.image_investment)
                 .centerCrop()
                 .into(image);
+
+
         search.setOnClickListener(new View.OnClickListener() {
 
             @Override

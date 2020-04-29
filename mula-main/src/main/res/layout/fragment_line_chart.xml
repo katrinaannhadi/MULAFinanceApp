@@ -9,7 +9,7 @@
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineView"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

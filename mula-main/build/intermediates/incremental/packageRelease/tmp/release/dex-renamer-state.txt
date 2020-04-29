@@ -1,4 +1,0 @@
-#Thu Apr 23 12:09:21 AEST 2020
-base.0=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\transforms\\r8\\release\\0\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
