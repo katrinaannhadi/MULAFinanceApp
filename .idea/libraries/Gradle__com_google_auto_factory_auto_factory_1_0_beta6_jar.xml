@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.auto.factory:auto-factory:1.0-beta6@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.factory/auto-factory/1.0-beta6/58c804763a4d80c0884ac8a740fcff4d61da72bc/auto-factory-1.0-beta6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.factory/auto-factory/1.0-beta6/f5a5b444bc963875c907315a242b6b5914c0e24b/auto-factory-1.0-beta6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.factory/auto-factory/1.0-beta6/fab31580230ac3001579238a8857a74bd045e3b9/auto-factory-1.0-beta6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

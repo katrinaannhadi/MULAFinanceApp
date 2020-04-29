@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MULAFinanceApp.iml" filepath="$PROJECT_DIR$/MULAFinanceApp.iml" group="MULAFinanceApp" />
+      <module fileurl="file://$PROJECT_DIR$/android-base/android-base.iml" filepath="$PROJECT_DIR$/android-base/android-base.iml" group="MULAFinanceApp/android-base" />
+      <module fileurl="file://$PROJECT_DIR$/android-pickers/android-pickers.iml" filepath="$PROJECT_DIR$/android-pickers/android-pickers.iml" group="MULAFinanceApp/android-pickers" />
+      <module fileurl="file://$PROJECT_DIR$/mula-base/mula-base.iml" filepath="$PROJECT_DIR$/mula-base/mula-base.iml" group="MULAFinanceApp/mula-base" />
+      <module fileurl="file://$PROJECT_DIR$/mula-main/mula-main.iml" filepath="$PROJECT_DIR$/mula-main/mula-main.iml" group="MULAFinanceApp/mula-main" />
+    </modules>
+  </component>
+</project>

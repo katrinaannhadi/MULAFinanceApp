@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton:butterknife:8.6.1-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63824e7cccdf623cfaeaf604342357fb/jetified-butterknife-8.6.1-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63824e7cccdf623cfaeaf604342357fb/jetified-butterknife-8.6.1-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.6.1-SNAPSHOT/7dd3e0dad30dd7b8610a0913bec535896acb0cd1/butterknife-8.6.1-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.6.1-SNAPSHOT/8c1acacaf4eca174dac0b23c75743bbf36d957ec/butterknife-8.6.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
